@@ -15,6 +15,7 @@ const Header = () => {
           height={400}
           alt={'logo'}
           className="object-cover"
+          priority
         />
       </div>
 
@@ -42,7 +43,7 @@ const Header = () => {
               <p>A recipe is soulless. The essence of the </p>
               <p>must comme from, the cook.</p>
             </div>
-{/* Suggested code may be subject to a license. Learn more: ~LicenseLog:1132935911. */}
+
             <Link href='/recipes' className="w-fit flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary font-xl font-semibold hover:text-white hover:bg-primary transition-all delay-200 ">
               Check Our Recipe <ExternalLink className="w-4 h-4 ml-2" />
             </Link>
@@ -62,6 +63,7 @@ const Header = () => {
             height={426}
             alt={'logo'}
             className="object-cover  w-full h-full rounded-3xl"
+            priority
           />
         </div>
       </div>

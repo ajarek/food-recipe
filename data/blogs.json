@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "title": "Polish Pierogi",
+      "description": "Discover the delicious world of Polish pierogi, these savory dumplings filled with various ingredients.",
+      "image": "/images/cook-5.jpg",
+      "date": "2024-10-02"
+    },
+    {
+      "id": 2,
+      "title": "Healthy Baltic Sea Seafood Recipes",
+      "description": "Enjoy fresh and sustainable seafood from the Baltic Sea with these healthy and flavorful recipes.",
+      "image": "/images/cook-1.jpg",
+      "date": "2024-09-05"
+    },
+    {
+      "id": 3,
+      "title": "Vegan Polish Cuisine",
+      "description": "Explore the vegan side of Polish cuisine with these delicious and plant-based recipes.",
+      "image": "/images/cook-2.jpg",
+      "date": "2024-09-19"
+    },
+    {
+      "id": 4,
+      "title": "Christmas Eve Dinner",
+      "description": "Celebrate the Polish Christmas tradition with these simple and flavorful recipes for Wigilia dinner.",
+      "image": "/images/cook-3.jpg",
+      "date": "2024-09-25"
+    },
+    {
+      "id": 5,
+      "title": "Culinary Delights",
+      "description": "Discover the unique flavors of Kołobrzeg with these must-try local dishes and restaurants.",
+      "image": "/images/cook-4.jpg",
+      "date": "2024-08-01"
+    },
+    {
+        "id":6,
+        "title": "Vegan Chocolate Avocado Mousse",
+        "description": "Indulge in this rich and creamy vegan chocolate mousse made with ripe avocados and cocoa powder.",
+        "image": "/images/cook-5.jpg",
+        "date": "2024-07-05"
+      }
+  ]

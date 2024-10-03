@@ -10,3 +10,13 @@ type Recipe = {
 }
 
 export type { Recipe }
+
+type Blog = {
+  id: string
+  title: string
+ description: string
+  image: string
+  date: string
+}
+
+export type { Blog }
