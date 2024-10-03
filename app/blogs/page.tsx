@@ -12,12 +12,12 @@ const Blogs = () => {
         {blogs.map((blog) => (
           <Card key={blog.id}>
             <Link href={`/blog/${blog.id}`}>
-              <CardHeader className=' relative h-48 w-full rounded-xl p-4'>
+              <CardHeader className=' relative w-full rounded-xl p-4  aspect-[16/9]' >
                 <Image
                   src={blog.image}
                  fill
-                  alt="recipe"
-                  className="rounded-xl object-cover w-full h-40 "
+                  alt="blogs"
+                  className="rounded-xl object-cover  "
                 />
               </CardHeader>
               <CardContent className="flex flex-col  gap-4 mt-4">

@@ -104,13 +104,12 @@ const Recipes = () => {
             .map((el: Recipe) => (
               <Card key={el.id}>
                 <Link href={`/recipe/${el.id}`}>
-                  <CardHeader>
+                  <CardHeader className=' relative w-full  p-4 rounded-xl aspect-[1/1] '>
                     <Image
                       src={el.image}
-                      height={300}
-                      width={300}
+                      fill
                       alt="recipe"
-                      className="rounded-xl"
+                      className=" p-4 object-cover rounded-xl"
                     />
                   </CardHeader>
                   <CardContent>
