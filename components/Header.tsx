@@ -31,9 +31,9 @@ const Header = () => {
               <p>A recipe is soulless. The essence of the </p>
               <p>must comme from, the cook.</p>
             </div>
-            <Button className="w-fit bg-white text-primary font-xl font-semibold hover:text-white transition-all delay-200 ">
+            <Link href='/blogs' className="w-fit flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary font-xl font-semibold hover:text-white hover:bg-primary transition-all delay-200 ">
               Read More <ExternalLink className="w-4 h-4 ml-2" />
-            </Button>
+            </Link>
           </div>
           <div className='flex flex-col gap-4 '>
             <div className="text-xl font-semibold">

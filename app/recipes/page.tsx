@@ -102,17 +102,18 @@ const Recipes = () => {
               el.name.toLowerCase().includes(search.toLowerCase())
             )
             .map((el: Recipe) => (
-              <Card key={el.id}>
+              <Card key={el.id} className='p-4'>
                 <Link href={`/recipe/${el.id}`}>
-                  <CardHeader className=' relative w-full  p-4 rounded-xl aspect-[1/1] '>
+                  <CardHeader className=' relative w-full rounded-xl aspect-[1/1] bg-red-300 '>
                     <Image
                       src={el.image}
                       fill
                       alt="recipe"
-                      className=" p-4 object-cover rounded-xl"
+                      className=" object-cover rounded-xl "
+                      priority
                     />
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className='mt-4'>
                     <CardTitle>{el.name}</CardTitle>
                     <p>
                       <span className="text-gray-500">prep time minutes</span>:{' '}
