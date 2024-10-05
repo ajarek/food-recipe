@@ -26,7 +26,7 @@ const Recipes = () => {
   }
 
   return (
-    <div className="flex flex-col justify-start items-center h-screen w-flex px-24 max-lg:px-10 max-sm:px-4 gap-4">
+    <div className="flex flex-col justify-start items-center min-h-screen w-flex px-24 max-lg:px-10 max-sm:px-4 gap-4">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-2xl  font-semibold ">Recipes</h1>
         <div className="max-w-[250px] w-full">
