@@ -1,4 +1,3 @@
-'use client'
 import BlogsHome from '@/components/BlogsHome'
 import Header from '@/components/Header'
 import TrendingRecipes from '@/components/TrendingRecipes'

@@ -1,8 +1,9 @@
-import blogs from '@/data/blogs.json'
+'use client'
 import Image from 'next/image'
-
+import { useBlogStore } from '@/store/blogStore'
 
 const BlogId = ({params}:{params:{id:string}}) => {
+   const {items:blogs}= useBlogStore()
     const blog= blogs.find((blog) => blog.id === +params.id)
     if (!blog) {
         return (

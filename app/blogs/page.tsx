@@ -1,12 +1,17 @@
-import blogs from '@/data/blogs.json'
+'use client'
+
+import {useBlogStore} from '@/store/blogStore'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Plus } from 'lucide-react'
 const Blogs = () => {
+  const { items: blogs } = useBlogStore()
   return (
     <div className="flex flex-col justify-start items-center min-h-screen w-flex px-24 max-lg:px-10 max-sm:px-4 gap-4 pb-12">
       <div className="w-full flex justify-between items-center">
         <h1 className="text-2xl  font-semibold ">Blogs</h1>
+        <Link href={'/add-blog'} className="w-fit flex items-center gap-2 p-2 rounded-lg bg-white text-primary font-xl font-semibold hover:text-white hover:bg-primary transition-all delay-200 "><Plus />Add Blog</Link>
       </div>
       <div className="grid grid-cols-3 gap-4 max-lg:grid-cols-2 max-sm:grid-cols-1 justify-center items-center">
         {blogs.map((blog) => (
