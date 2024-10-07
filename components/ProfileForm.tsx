@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { useBlogStore } from '@/store/blogStore'
+import { useRouter } from 'next/navigation'
 
 const FormSchema = z.object({
   title: z.string().min(2, { message: 'Title must be at least 2 characters.' }),
@@ -26,12 +27,14 @@ const FormSchema = z.object({
     .min(10, { message: 'Address url must be at least 10 characters.' }),
 })
 
-const today = new Date();
-const todayDate = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate() <= 9?'0'+today.getDate():today.getDate()};`
+const today = new Date()
+const todayDate = `${today.getFullYear()}-${today.getMonth() + 1}-${
+  today.getDate() <= 9 ? '0' + today.getDate() : today.getDate()
+};`
 
 export function ProfileForm() {
   const { addItemToBlog, items } = useBlogStore()
-
+  const router = useRouter()
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -48,9 +51,10 @@ export function ProfileForm() {
       title: data.title,
       description: data.description,
       image: data.image,
-      date:todayDate ,
+      date: todayDate,
     }
     addItemToBlog(newItem)
+    router.push('/blogs')
     resetField('title')
     resetField('description')
     resetField('image')

@@ -6,14 +6,13 @@ type Item = {
   title: string
   description: string
   image: string
-  date:string
+  date: string
 }
 
 type ItemState = {
   items: Item[]
   addItemToBlog: (item: Item) => void
   removeItemFromBlog: (id: number) => void
-  removeAllFromBlog: () => void
 }
 
 export const useBlogStore = create<ItemState>()(
@@ -30,8 +29,6 @@ export const useBlogStore = create<ItemState>()(
         set((state) => ({
           items: state.items.filter((item) => item.id !== id),
         })),
-
-      removeAllFromBlog: () => set({ items: [] }),
     }),
 
     { name: 'blogStore', storage: createJSONStorage(() => localStorage) }

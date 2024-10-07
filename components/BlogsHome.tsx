@@ -29,7 +29,10 @@ const BlogsHome = () => {
               <p className="text-gray-300">
                 {blog.description.slice(0, 50)}...
               </p>
-              <Link href={`/blog/${blog.id}`} className="border-2 border-b-blue-500 hover:border-b-violet-600 w-fit tracking-wider font-semibold">
+              <Link
+                href={`/blog/${blog.id}`}
+                className="border-2 border-b-blue-500 hover:border-b-violet-600 w-fit tracking-wider font-semibold"
+              >
                 Read More
               </Link>
             </div>

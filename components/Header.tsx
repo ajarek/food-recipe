@@ -9,12 +9,12 @@ const Header = () => {
   return (
     <header className=" relative w-full h-[400px] max-sm:h-[550px]  bg-background  text-white rounded-3xl overflow-hidden ">
       <div className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-20 max-lg:hidden ">
-       <ImageMotion/>
+        <ImageMotion />
       </div>
 
       <div className=" absolute top-0  w-full h-[250px] max-sm:h-[400px]  bg-gray-800  p-4 overflow-hidden rounded-e-3xl ">
-        <div className='flex justify-between items-center'>
-          <div className='flex flex-col gap-4 '>
+        <div className="flex justify-between items-center">
+          <div className="flex flex-col gap-4 ">
             <div className="text-2xl font-semibold">
               <h1>Discover Simple</h1>
               <h1>Delicious, And</h1>
@@ -24,20 +24,26 @@ const Header = () => {
               <p>A recipe is soulless. The essence of the </p>
               <p>must comme from, the cook.</p>
             </div>
-            <Link href='/blogs' className="w-fit flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary font-xl font-semibold hover:text-white hover:bg-primary transition-all delay-200 ">
+            <Link
+              href="/blogs"
+              className="w-fit flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary font-xl font-semibold hover:text-white hover:bg-primary transition-all delay-200 "
+            >
               Read More <ExternalLink className="w-4 h-4 ml-2" />
             </Link>
           </div>
-          <div className='flex flex-col gap-4 '>
+          <div className="flex flex-col gap-4 ">
             <div className="text-xl font-semibold">
-              <h1>Top Recipes</h1>             
+              <h1>Top Recipes</h1>
             </div>
             <div className="text-sm font-normal text-gray-200  ">
               <p>A recipe is soulless. The essence of the </p>
               <p>must comme from, the cook.</p>
             </div>
 
-            <Link href='/recipes' className="w-fit flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary font-xl font-semibold hover:text-white hover:bg-primary transition-all delay-200 ">
+            <Link
+              href="/recipes"
+              className="w-fit flex items-center gap-2 px-4 py-2 rounded-lg bg-white text-primary font-xl font-semibold hover:text-white hover:bg-primary transition-all delay-200 "
+            >
               Check Our Recipe <ExternalLink className="w-4 h-4 ml-2" />
             </Link>
           </div>

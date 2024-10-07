@@ -2,17 +2,20 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import React from 'react'
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Image from 'next/image'
 import recipes from '@/data/data.json'
 import Link from 'next/link'
-import type { Recipe} from '@/type/type'
-import { Beef, Drumstick, ListCheck, Martini, Pizza, Salad, Soup } from 'lucide-react'
+import type { Recipe } from '@/type/type'
+import {
+  Beef,
+  Drumstick,
+  ListCheck,
+  Martini,
+  Pizza,
+  Salad,
+  Soup,
+} from 'lucide-react'
 
 const Recipes = () => {
   const [search, setSearch] = React.useState('')
@@ -45,35 +48,37 @@ const Recipes = () => {
             className="w-full flex gap-2 focus:bg-primary/70 max-lg:w-32"
             data-name="Pasta"
           >
-            <Soup/> Pasta
+            <Soup /> Pasta
           </Button>
           <Button
             onClick={handleButton}
             className="w-full flex gap-2 focus:bg-primary/70 max-lg:w-32"
             data-name="Pizza"
           >
-            <Pizza/>Pizza
+            <Pizza />
+            Pizza
           </Button>
           <Button
             onClick={handleButton}
             className="w-full flex gap-2 focus:bg-primary/70 max-lg:w-32"
             data-name="Chicken"
           >
-            <Drumstick/>Chicken
+            <Drumstick />
+            Chicken
           </Button>
           <Button
             onClick={handleButton}
             className="w-full flex gap-2 focus:bg-primary/70 max-lg:w-32"
             data-name="Salad"
           >
-           <Salad /> Salad
+            <Salad /> Salad
           </Button>
           <Button
             onClick={handleButton}
             className="w-full flex gap-2 focus:bg-primary/70 max-lg:w-32"
             data-name="Beef"
           >
-           <Beef /> Beef
+            <Beef /> Beef
           </Button>
           <Button
             onClick={handleButton}
@@ -87,7 +92,7 @@ const Recipes = () => {
             className="w-full flex gap-2 focus:bg-primary/70 max-lg:w-32"
             data-name="All"
           >
-            <ListCheck/> All
+            <ListCheck /> All
           </Button>
         </div>
         <div className="w-full grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-4">
@@ -102,9 +107,12 @@ const Recipes = () => {
               el.name.toLowerCase().includes(search.toLowerCase())
             )
             .map((el: Recipe) => (
-              <Card key={el.id} className='p-4'>
+              <Card
+                key={el.id}
+                className="p-4"
+              >
                 <Link href={`/recipe/${el.id}`}>
-                  <CardHeader className=' relative w-full rounded-xl aspect-[1/1] bg-red-300 '>
+                  <CardHeader className=" relative w-full rounded-xl aspect-[1/1] bg-red-300 ">
                     <Image
                       src={el.image}
                       fill
@@ -113,7 +121,7 @@ const Recipes = () => {
                       priority
                     />
                   </CardHeader>
-                  <CardContent className='mt-4'>
+                  <CardContent className="mt-4">
                     <CardTitle>{el.name}</CardTitle>
                     <p>
                       <span className="text-gray-500">prep time minutes</span>:{' '}

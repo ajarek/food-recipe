@@ -8,7 +8,10 @@ export default function NotFound() {
         <p>We could not find the page you were looking for.</p>
         <p>
           Go back to the{' '}
-          <Link className="underline text-green-700 text-xl" href="/">
+          <Link
+            className="underline text-green-700 text-xl"
+            href="/"
+          >
             Home
           </Link>
           .

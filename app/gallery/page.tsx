@@ -9,10 +9,8 @@ const cards = images.map((image) => ({
 
 const Gallery = () => {
   return (
-    <div className='min-h-screen flex flex-col items-center justify-center p-10'>
-      <FocusCards
-        cards={cards}
-      />
+    <div className="min-h-screen flex flex-col items-center justify-center p-10">
+      <FocusCards cards={cards} />
     </div>
   )
 }
